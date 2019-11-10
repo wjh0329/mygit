@@ -1,0 +1,47 @@
+
+一。sqli-lab
+
+ 打开mysql ：mysql -uroot -p
+ 1。显示所有数据库：show databases;
+ 2。使用数据库里面的xxxx表：use xxxx;
+ 3。显示xxxx数据库中的表：show tables;
+ 4。显示xxxx中user的全部信息：select * from users;
+
+ 查库：select schema_name from information_schema.schemata;
+ 查表：select table_name from information_schema.tables where table_schema='xxxx';
+ 查列：select column_name from information_schema.columns where table_name='users';
+ 查字段：select username,password from security.users;
+1。= 查库
+2。3。= 查表
+4。= 查列和字段
+
+----------------------------------------------------------
+二。GIT
+
+查看配置信息
+$ git config -l
+查看全局配置信息
+$ git config --global -l
+清屏
+$clear
+查看当前文件的状态（红色代表在工作区，绿色在暂存区，看不见的证明修改的信息都已经提交到历史区）
+$ git status
+
+------------------------------------------------------------
+《one。GIT的全局配置》
+
+配置全局信息：用户名和邮箱 ,告诉git我是谁
+1.$ git config --global user.name 'xxx'
+2.$ git config --global user.email 'xxx@xx.xx'
+-----------------------------------------------
+《two。创建仓库完成版本控制》
+ 
+创建本地git仓库
+1.$ git init  //会生成一个隐藏的文件夹“.git”,不能删，包含暂存区和历史区，删了不是一个完整的git仓库
+ 在本地编写完成代码后，把一些文件提交到暂存区
+2.$ git add xxx //把某一个文件或者文件夹提交的暂存区
+   $ git add . 或 -A   //把所有最新修改的文件提交的暂存区
+
+3.
+  
+
